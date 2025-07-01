@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            padding: 1%;
+            background-color: rgb(34, 33, 33);
+        }
+        .nav-item a{
+            text-decoration: none;
+            padding: 0 15px;
+            color: rgb(144, 142, 142);
+        }
+        h1{
+            color: aliceblue;
+        }
+        h2{
+            margin: 0 20px;
+            font-size: 40px;
+        }
+        .menu,.popular{
+            padding: 4% 20%;
+        }
+        .menu-grid {
+            display: grid;
+            margin-left: auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            margin: 0 20px;
+            border: 1px solid #ccc;
+            padding: 30px;
+            box-shadow: 0 0 10px #ccc;
+            background-color: white;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        .card p {
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        .video{
+            display: block;
+            width: 700px;
+            height: 400px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px #5a5a5a;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Glenary's Restaurant</h1>
+        <div class="nav-item">
+            <a href="#menu">Menu</a>
+            <a href="#popular">Popular Dishes</a>
+        </div>
+        
+    </nav>
+    <div class="menu" id="menu">
+        <h2>Menu</h2>
+
+        <div class="menu-grid">
+            <div class="card">
+            <img src="https://septemberfarmcheese.b-cdn.net/wp-content/uploads/Blogs/Homemade-Pizza/homemade-pizza-monterey-jack-cheese.jpg" alt="Pizza Supreme">
+            <h3>Pizza Supreme</h3>
+            <p>Pizza sauce, mozzarella, bacon, onion, beef mince, capsicum, pepperoni, mushroom</p>
+            <p><strong>Price:</strong> ₹250</p>
+            </div>
+
+            <div class="card">
+            <img src="https://experience-fresh.panasonic.eu/wp-content/uploads/2018/12/Paneer_Tikka_Masala_enjoy_181205.jpg" alt="Paneer Tikka">
+            <h3>Paneer Tikka</h3>
+            <p>Paneer, Yogurt, Ground Spices, Bell Peppers, Onions, Baby Corn, Mushrooms</p>
+            <p><strong>Price:</strong> ₹200</p>
+            </div>
+        </div>
+    </div>
+    <div class="popular" id="popular">
+        <h2>Popular Dishes</h2>
+        
+        <iframe width="760" height="315" src="https://www.youtube.com/embed/VW54489LUuA?si=CYBnMFB2YQw1BFAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+</body>
+</html>
