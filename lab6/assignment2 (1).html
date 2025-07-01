@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Info Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Pure CSS Styling -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d6efd;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    #user-info p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      padding: 12px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h2>User Information</h2>
+      <div id="user-info">
+      </div>
+    </div>
+  </div>
+  <script>
+    const user = {
+      name: "Chanchal Patil",
+      age: 21,
+      email: "patilchanchal32@gmail.com"
+    };
+
+    const container = document.getElementById("user-info");
+
+    const namePara = document.createElement("p");
+    namePara.innerHTML = `<strong>Name:</strong> ${user.name}`;
+
+    const agePara = document.createElement("p");
+    agePara.innerHTML = `<strong>Age:</strong> ${user.age}`;
+
+    const emailPara = document.createElement("p");
+    emailPara.innerHTML = `<strong>Email:</strong> ${user.email}`;
+
+    container.appendChild(namePara);
+    container.appendChild(agePara);
+    container.appendChild(emailPara);
+  </script>
+
+</body>
+</html>
